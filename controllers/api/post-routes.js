@@ -15,7 +15,8 @@ router.get('/', (req, res) => {
             order: [
                 ['created_at', 'DESC']
             ],
-            include: [{
+            include: [
+                {
                     model: User,
                     attributes: ['username']
                 },
